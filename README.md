@@ -1,5 +1,7 @@
 # lab-1
 part A
+
+
 2.when the netclient is running in one terminal and netserve is rounning in another terminal the server wrriten to the socket and displays the output and the client received from socket and dispalys output.(using ubuntu).
 
 
