@@ -14,14 +14,14 @@ def Reader():
     def Writer():
     global x
     print('Writer is Writing!')
-    lock.acquire()      #Acquire the lock before Writing
-    x += 1              #Write on the shared memory
+    lock.acquire()     
+    x += 1              
     print('Writer is Releasing the lock!')
-    lock.release()      #Release the lock after Writing
+    lock.release()      
     print()
     if __name__ == '__main__':
     for i in range(0, 10):
-        randomNumber = random.randint(0, 100)   #Generate a Random number between 0 to 100
+        randomNumber = random.randint(0, 100)  
         if(randomNumber > 50):
             Thread1 = thread.Thread(target = Reader)
             Thread1.start()
